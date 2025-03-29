@@ -67,6 +67,19 @@ DB_DATABASE=omnidine
 DB_USERNAME={ CHANGE THIS }
 DB_PASSWORD={ CHANGE THIS }
 ```
+ดำเนินการแก้ .env ต่อ เพื่อทำการเชื่อมกับ S3 Storage ในการเก็บและเรียกรูปภาพ
+
+```env
+AWS_ACCESS_KEY_ID=minioadmin
+AWS_SECRET_ACCESS_KEY=minioadmin
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=images
+AWS_ENDPOINT={ API FOR S3 STORAGE }
+AWS_USE_PATH_STYLE_ENDPOINT=true
+
+S3_INTERNAL_ENDPOINT={ API FOR S3 STORAGE}
+S3_EXTERNAL_ENDPOINT={ API FOR S3 STORAGE }
+```
 
 3. Executing Docker Command
 ```bash
